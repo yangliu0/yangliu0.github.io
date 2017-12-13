@@ -406,7 +406,7 @@
 <p>$$<br>-y_i( wx_i+b) &gt;0<br>$$</p>
 <p>成立。因为当$wx_i + b &gt;0$时，$y_i=-1$，而当$wx_i + b &lt; 0$时，$y_i=+1$，因此，误分类点$x_i$到超平面S的距离是:</p>
 <p>$$<br>-\dfrac {1}{\left| w\right| }y_i( wx_i+b)<br>$$<br>这样，假设超平面S的误分类点集合为M，那么所以误分类点到超平面S的总距离为：</p>
-<p>$$<br>-\dfrac {1}{\left| w\right| }\sum <em>{x</em>{i} \in M}y<em>{i}\left( wx</em>{i}+b\right)<br>$$<br>不考虑$\dfrac {1}{\left| w\right| }$，就得到感知机学习的损失函数：<br>$$<br>L\left( w,b\right) =-\sum\ <em>{x</em>{i\varepsilon }n}y_i\left(wx_i+b\right)<br>$$<br>其中M为误分类点的集合。</p>
+<p>$$<br>-\dfrac {1}{\left| w\right| }\sum _{x_{i} \in M}y<em>{i}\left( wx\</em>{i}+b\right)<br>$$<br>不考虑$\dfrac {1}{\left| w\right| }$，就得到感知机学习的损失函数：<br>$$<br>L\left( w,b\right) =-\sum\ <em>{x</em>{i\varepsilon }n}y_i\left(wx_i+b\right)<br>$$<br>其中M为误分类点的集合。</p>
 <h3 id="感知机算法原始形式"><a href="#感知机算法原始形式" class="headerlink" title="感知机算法原始形式"></a>感知机算法原始形式</h3><p>感知机算法是使得损失函数$L(w,b)$极小化的最优化问题，可以使用随机梯度下降法来进行最优化。</p>
 <p>假设误分类点集合M是固定的，那么损失函数$L(w,b)$的梯度由<br>$$<br>\nabla <em>{w}L\left( \omega ,b\right) =-\sum </em>{x<em>{i\varepsilon }n}y</em>{i}x_{i}<br>$$</p>
 <p>$$<br>\nabla <em>{b}L\left( \omega ,b\right) =-\sum </em>{x<em>{i\varepsilon }n}y</em>{i}<br>$$</p>
