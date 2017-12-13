@@ -405,7 +405,7 @@ f\left( x\right) =sign\left( wx+b\right)</script><p>称为感知机。其中，w
 sign\left( x\right) =\begin{cases}+1 &x\geq 0\\-1 &x<0 \end{cases}</script></blockquote>
 <h3 id="感知机学习策略"><a href="#感知机学习策略" class="headerlink" title="感知机学习策略"></a><strong>感知机学习策略</strong></h3><p>假设训练数据集是线性可分的，感知机学习的目标就是求得一个能够将训练集正实例点和负实例点完成正确分开的分离超平面。为了找出这样的超平面，即确定感知机模型参数w，b，需定义损失函数并将损失函数极小化。<br>损失函数使用误分类点到超平面S的总距离，因此输入空间$R^n​$中任何一点$x_0​$到超平面S的距离为：</p>
 <script type="math/tex; mode=display">
-\dfrac {1}{\left\| w\right\| }\left| wx+b\right|</script><p>在这里，$\left| w\right|$是w的$L_2$范数。</p>
+\dfrac {1}{\left\| w\right\| }\left| wx+b\right|</script><p>在这里，$\left|| w\right||$是w的$L_2$范数。</p>
 <p>对于误分类的数据$\left(x_i,y_i\right)$来说，</p>
 <script type="math/tex; mode=display">
 -y_i( wx_i+b) >0</script>
